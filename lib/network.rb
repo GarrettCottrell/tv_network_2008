@@ -21,4 +21,10 @@ class Network
     end
     main_characters_variable.flatten
   end
+
+  def actors_by_show
+    @shows.group_by do |show|
+    show.actors
+    end
+  end
 end
